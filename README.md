@@ -1,1 +1,1 @@
-# shopping-cart-springboot-angular-master
+# shopping-cart-springboot-angular
