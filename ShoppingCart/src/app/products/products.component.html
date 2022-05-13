@@ -1,0 +1,35 @@
+<div class="container">
+    <h3 class="text-center">Products</h3>
+    <div class="div-scroll scroll-155">
+        <table class="table table-light table-striped table-hover">
+            <!-- <caption><h2>My Cart</h2></caption> -->
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Rate</th>
+                    <th colspan="3">No of Items</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <!-- <td *ngIf="isBook(product)">{{product.name}}</td>
+                    <td *ngIf="isBook(product)">{{product.description}}</td>
+                    <td *ngIf="isBook(product)">{{product.category}}</td>
+                    <td *ngIf="isBook(product)">{{product.price}}</td> -->
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.price}}</td>
+                    <td><button class="btn btn-secondary">-</button></td>
+                    <td>{{product.price}}</td>
+                    <td><button class="btn btn-secondary">+</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="div-padding" align="right">
+     <button type="submit" class="btn btn-info" (click)="addToCart()">Add to Cart</button>
+    </div>
+</div>

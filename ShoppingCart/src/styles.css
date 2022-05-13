@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+
+body {
+    background-color: rgb(204, 251, 251);
+    /* background-image: url(https://cdn.hipwallpaper.com/i/78/76/vDH90j.jpg);
+    background-image: url(https://www.fractas.com/assets/Uploads/out-of-the-box-shops.png);
+    background-image: url(https://previews.123rf.com/images/travelman/travelman1703/travelman170300074/74426180-sfondo-dello-shopping-online.jpg); */
+    /* background-image: url(https://previews.123rf.com/images/vectomart/vectomart1210/vectomart121000059/15803400-%E7%95%B0%E3%81%AA%E3%82%8B%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0-%E3%83%90%E3%83%83%E3%82%B0%E8%B2%A9%E5%A3%B2%E8%83%8C%E6%99%AF%E3%81%AE%E5%9B%B3.jpg?fj=1);
+    background-position: center; */
+}
+
+.div-padding {
+    padding: 10px;
+}
+
+.container-bg {
+    background-color: rgb(247, 247, 243);
+}
+
+.menu-bg-color {
+    /* background-color: rgb(104, 151, 93); */
+    background-color: #E42B26;
+    height: 125px;
+}
+
+.app-name {
+    text-align: center;
+    height: 70px;
+}
+
+.div-scroll {
+    background-color: #eaeaea;
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-align: center;
+    width: 100%;
+}
+
+.scroll-155 {
+    height: 155px;
+}

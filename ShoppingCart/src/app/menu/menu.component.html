@@ -1,0 +1,46 @@
+<header>
+  <div class="container-fluid menu-bg-color">
+  <div class="app-name text-center text-white"><h1>Shopping Cart Application</h1></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+                <a class="nav-link active" aria-current="page" routerLink="/welcome/san">Home</a>
+              </li>
+              <li class="nav-item" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+                <a class="nav-link active" aria-current="page" routerLink="/cart">Cart</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop by Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" routerLink="/books">Books</a></li>
+                  <li><a class="dropdown-item" href="/apparels">Apparels</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/electronics">Electronics</a></li>
+                </ul>
+              </li> -->
+
+            </ul>
+            <form class="d-flex" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+              <input class="form-control me-2" type="search" name="searchText" [(ngModel)]="searchText" placeholder="Product Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit" (click)="handleSearch()">Search</button>
+            </form>
+            <ul class="navbar-nav d-flex" id="navbarSupportedContent">
+              <li class="nav-item" *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()">
+                <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+              </li>
+              <li class="nav-item" *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+                <a class="nav-link active" aria-current="page" routerLink="/logout">Logout</a>
+              </li>
+            </ul>
+          </div>
+    </nav>
+  </div>
+</header>

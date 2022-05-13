@@ -1,0 +1,22 @@
+<div class="container">
+    <h3 class="div-padding">Login!</h3>
+    <!-- <small *ngIf="invalidLogin">{{errorMessage}}</small> -->
+    <form>
+        <div class="alert warning-alert" *ngIf="invalidLogin">{{errorMessage}}</div>
+        <table>
+            <tr>
+                <td>Username :</td>
+                <td><input type="text" name="username" [(ngModel)]="username"></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="text" name="password" [(ngModel)]="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" class="div-padding">
+                    <button class="btn btn-info" (click)="handleLogin()">Login</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
